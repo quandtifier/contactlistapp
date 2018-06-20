@@ -1,8 +1,8 @@
 var express = require('express');
 var app = express();
-var bodyParser = require('body-parser');
+//var bodyParser = require('body-parser');
 app.use(express.static(__dirname + "/public"));
-app.use(bodyParser.json());
+//app.use(bodyParser.json());
 app.get('/contactlist', function (req, res) {
     console.log("I recieved a get request");
 
